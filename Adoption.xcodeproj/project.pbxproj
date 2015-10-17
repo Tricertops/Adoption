@@ -14,6 +14,7 @@
 		5B5F560F1BCED608003C5E6B /* iOS Adoption.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5B5F55F81BCED608003C5E6B /* iOS Adoption.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5B5F56151BCEDF2F003C5E6B /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B5F56141BCEDF2F003C5E6B /* TodayViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		5BC8567F1BD2559400D81A43 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC8567E1BD2559400D81A43 /* MainMenu.xib */; settings = {ASSET_TAGS = (); }; };
+		5BC856831BD25C0F00D81A43 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC856821BD25C0F00D81A43 /* Credits.rtf */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		5B5F56091BCED608003C5E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B5F56141BCEDF2F003C5E6B /* TodayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodayViewController.xib; sourceTree = "<group>"; };
 		5BC8567E1BD2559400D81A43 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		5BC856821BD25C0F00D81A43 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				5B5F55E91BCED5E6003C5E6B /* Assets.xcassets */,
 				5BC8567E1BD2559400D81A43 /* MainMenu.xib */,
 				5B5F55EE1BCED5E6003C5E6B /* Info.plist */,
+				5BC856821BD25C0F00D81A43 /* Credits.rtf */,
 			);
 			path = Adoption;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B5F55EA1BCED5E6003C5E6B /* Assets.xcassets in Resources */,
+				5BC856831BD25C0F00D81A43 /* Credits.rtf in Resources */,
 				5BC8567F1BD2559400D81A43 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
