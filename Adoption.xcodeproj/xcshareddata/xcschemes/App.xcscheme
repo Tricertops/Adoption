@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5B5F55E31BCED5E6003C5E6B"
-               BuildableName = "App.app"
+               BuildableName = "iOS Adoption.app"
                BlueprintName = "App"
                ReferencedContainer = "container:Adoption.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5B5F55E31BCED5E6003C5E6B"
-            BuildableName = "App.app"
+            BuildableName = "iOS Adoption.app"
             BlueprintName = "App"
             ReferencedContainer = "container:Adoption.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5B5F55E31BCED5E6003C5E6B"
-            BuildableName = "App.app"
+            BuildableName = "iOS Adoption.app"
             BlueprintName = "App"
             ReferencedContainer = "container:Adoption.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5B5F55E31BCED5E6003C5E6B"
-            BuildableName = "App.app"
+            BuildableName = "iOS Adoption.app"
             BlueprintName = "App"
             ReferencedContainer = "container:Adoption.xcodeproj">
          </BuildableReference>
