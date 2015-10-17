@@ -50,9 +50,9 @@
 		5B5F55FF1BCED608003C5E6B /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		5B5F56091BCED608003C5E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B5F56141BCEDF2F003C5E6B /* TodayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodayViewController.xib; sourceTree = "<group>"; };
+		5BAE9F211BD2AF1800F9601D /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = App.entitlements; sourceTree = "<group>"; };
 		5BC8567E1BD2559400D81A43 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		5BC856821BD25C0F00D81A43 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
-		5BC856881BD2A7BA00D81A43 /* iOS Adoption.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "iOS Adoption.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +76,7 @@
 		5B5F55DB1BCED5E6003C5E6B = {
 			isa = PBXGroup;
 			children = (
-				5BC856881BD2A7BA00D81A43 /* iOS Adoption.entitlements */,
-				5B5F55E61BCED5E6003C5E6B /* Adoption */,
+				5B5F55E61BCED5E6003C5E6B /* App */,
 				5B5F55FC1BCED608003C5E6B /* Widget */,
 				5B5F55E51BCED5E6003C5E6B /* Products */,
 			);
@@ -92,7 +91,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5B5F55E61BCED5E6003C5E6B /* Adoption */ = {
+		5B5F55E61BCED5E6003C5E6B /* App */ = {
 			isa = PBXGroup;
 			children = (
 				5B5F55E71BCED5E6003C5E6B /* AppDelegate.swift */,
@@ -100,8 +99,9 @@
 				5BC8567E1BD2559400D81A43 /* MainMenu.xib */,
 				5B5F55EE1BCED5E6003C5E6B /* Info.plist */,
 				5BC856821BD25C0F00D81A43 /* Credits.rtf */,
+				5BAE9F211BD2AF1800F9601D /* App.entitlements */,
 			);
-			path = Adoption;
+			path = App;
 			sourceTree = "<group>";
 		};
 		5B5F55FC1BCED608003C5E6B /* Widget */ = {
@@ -330,11 +330,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "iOS Adoption.entitlements";
+				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				INFOPLIST_FILE = Adoption/Info.plist;
+				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tricertops.Adoption;
 				PRODUCT_NAME = "iOS Adoption";
@@ -345,11 +345,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "iOS Adoption.entitlements";
+				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				INFOPLIST_FILE = Adoption/Info.plist;
+				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tricertops.Adoption;
 				PRODUCT_NAME = "iOS Adoption";
