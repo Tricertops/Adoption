@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5B5F55E81BCED5E6003C5E6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F55E71BCED5E6003C5E6B /* AppDelegate.swift */; };
 		5B5F55EA1BCED5E6003C5E6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5F55E91BCED5E6003C5E6B /* Assets.xcassets */; };
-		5B5F55FB1BCED608003C5E6B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5F55FA1BCED608003C5E6B /* NotificationCenter.framework */; settings = {ASSET_TAGS = (); }; };
 		5B5F56001BCED608003C5E6B /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F55FF1BCED608003C5E6B /* TodayViewController.swift */; };
 		5B5F560F1BCED608003C5E6B /* iOS Adoption.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5B5F55F81BCED608003C5E6B /* iOS Adoption.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5B5F56151BCEDF2F003C5E6B /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B5F56141BCEDF2F003C5E6B /* TodayViewController.xib */; settings = {ASSET_TAGS = (); }; };
@@ -47,7 +46,6 @@
 		5B5F55E91BCED5E6003C5E6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B5F55EE1BCED5E6003C5E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B5F55F81BCED608003C5E6B /* iOS Adoption.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iOS Adoption.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B5F55FA1BCED608003C5E6B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		5B5F55FE1BCED608003C5E6B /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Widget.entitlements; sourceTree = "<group>"; };
 		5B5F55FF1BCED608003C5E6B /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		5B5F56091BCED608003C5E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B5F55FB1BCED608003C5E6B /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +79,6 @@
 				5BC856881BD2A7BA00D81A43 /* iOS Adoption.entitlements */,
 				5B5F55E61BCED5E6003C5E6B /* Adoption */,
 				5B5F55FC1BCED608003C5E6B /* Widget */,
-				5B5F55F91BCED608003C5E6B /* Frameworks */,
 				5B5F55E51BCED5E6003C5E6B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,14 +102,6 @@
 				5BC856821BD25C0F00D81A43 /* Credits.rtf */,
 			);
 			path = Adoption;
-			sourceTree = "<group>";
-		};
-		5B5F55F91BCED608003C5E6B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5B5F55FA1BCED608003C5E6B /* NotificationCenter.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		5B5F55FC1BCED608003C5E6B /* Widget */ = {
