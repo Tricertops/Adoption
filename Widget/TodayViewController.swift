@@ -33,6 +33,10 @@ class TodayViewController: NSViewController, NCWidgetProviding {
     }
     
     @IBAction func openURL(sender: AnyObject) {
+        /// The following crashes in simulator.
+        // self.extensionContext?.openURL(self.URL, completionHandler: nil)
+        
+        /// The following doesn’t seem to work in Today View.
         NSWorkspace.sharedWorkspace().openURL(self.URL)
     }
     
