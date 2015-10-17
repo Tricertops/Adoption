@@ -16,6 +16,18 @@ class TodayViewController: NSViewController, NCWidgetProviding {
     @IBOutlet var primaryLabel: NSTextField!
     @IBOutlet var secondaryLabel: NSTextField!
     
+    let Defaults = NSUserDefaults.standardUserDefaults()
+    let PrimaryCacheKey = "primary"
+    var cachedPrimaryString: String {
+        get { return Defaults.stringForKey(PrimaryCacheKey) ?? "" }
+        set { Defaults.setObject(newValue, forKey: PrimaryCacheKey) }
+    }
+    let SecondaryCacheKey = "secondary"
+    var cachedSecondaryString: String {
+        get { return Defaults.stringForKey(SecondaryCacheKey) ?? "" }
+        set { Defaults.setObject(newValue, forKey: SecondaryCacheKey) }
+    }
+    
     override var nibName: String? {
         return "TodayViewController"
     }
@@ -26,10 +38,7 @@ class TodayViewController: NSViewController, NCWidgetProviding {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.showText(primary: "Hello!")
-        
-        self.widgetPerformUpdateWithCompletionHandler { result in }
+        self.widgetPerformUpdateWithCompletionHandler { _ in }
     }
     
     func widgetPerformUpdateWithCompletionHandler(report: ((NCUpdateResult) -> Void)?) {
@@ -37,17 +46,31 @@ class TodayViewController: NSViewController, NCWidgetProviding {
             report?(.Failed)
             return
         }
-        self.showText(primary: "Loading…", secondary: "This may take a while.")
+        var primary = self.cachedPrimaryString
+        var secondary = self.cachedSecondaryString
+        let hasCache = !primary.isEmpty
+        if !hasCache {
+            NSLog("No cache.")
+            primary = "Loading…"
+            secondary = "iOS adoption is published by Apple."
+        }
+        else {
+            NSLog("Using cached.")
+        }
+        self.showText(primary: primary, secondary: secondary)
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(URL) { data, response, error in
             NSOperationQueue.mainQueue().addOperationWithBlock {
                 guard error == nil else {
-                    self.showError(detail: error!.localizedDescription)
+                    if !hasCache {
+                        self.showError(detail: error!.localizedDescription)
+                    }
+                    NSLog("Error: \(error!.localizedDescription)")
                     report?(.Failed)
                     return
                 }
                 guard data != nil else {
-                    self.showError(detail: "There was no error, but also no content.")
+                    NSLog("No error, no content. WTF?")
                     report?(.Failed)
                     return
                 }
@@ -55,13 +78,27 @@ class TodayViewController: NSViewController, NCWidgetProviding {
                 do {
                     let document = try NSXMLDocument(data: data!, options: NSXMLDocumentTidyHTML)
                     let (primary, secondary) = try self.parseDocument(document)
+                    
                     self.showText(primary: primary, secondary: secondary)
                     
-                    //TODO: Compare previous text with new text.
-                    report?(.NewData)
+                    let noChange = (self.cachedPrimaryString == primary && self.cachedSecondaryString == secondary)
+                    self.cachedPrimaryString = primary
+                    self.cachedSecondaryString = secondary;
+                    
+                    if noChange {
+                        NSLog("No change since last check.")
+                        report?(.NoData)
+                    }
+                    else {
+                        NSLog("Updated. Cached.")
+                        report?(.NewData)
+                    }
                 }
                 catch {
-                    self.showError(detail: "Cannot parse the website.")
+                    if !hasCache {
+                        self.showError(detail: "Cannot parse the website, click to open.")
+                    }
+                    NSLog("Failed to parse the website.")
                     report?(.Failed)
                 }
             }
