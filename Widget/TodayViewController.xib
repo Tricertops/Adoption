@@ -6,7 +6,7 @@
         <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="TodayViewController" customModule="Widget" customModuleProvider="target">
+        <customObject id="-2" userLabel="File's Owner" customClass="TodayViewController" customModule="AdoptionWidget" customModuleProvider="target">
             <connections>
                 <outlet property="primaryLabel" destination="NU1-Kh-iow" id="ecy-7h-Udl"/>
                 <outlet property="secondaryLabel" destination="sf5-Yp-UGo" id="JaV-2f-9vW"/>
