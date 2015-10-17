@@ -52,7 +52,7 @@ class TodayViewController: NSViewController, NCWidgetProviding {
         if !hasCache {
             NSLog("No cache.")
             primary = "Loading…"
-            secondary = "iOS adoption is published by Apple."
+            secondary = "As measured by the App Store."
         }
         else {
             NSLog("Using cached.")
