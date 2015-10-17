@@ -2,8 +2,8 @@
 //  TodayViewController.swift
 //  Widget
 //
-//  Created by Martin Kiss on 14.10.15.
-//  Copyright © 2015 Tricertops. All rights reserved.
+//  Created on 14 October 2015.
+//  © 2015 Martin Kiss.
 //
 
 import Cocoa
