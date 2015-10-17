@@ -41,7 +41,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5B5F55E41BCED5E6003C5E6B /* Adoption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adoption.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B5F55E41BCED5E6003C5E6B /* iOS Adoption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Adoption.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5F55E71BCED5E6003C5E6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B5F55E91BCED5E6003C5E6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B5F55EE1BCED5E6003C5E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		5B5F55E51BCED5E6003C5E6B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5B5F55E41BCED5E6003C5E6B /* Adoption.app */,
+				5B5F55E41BCED5E6003C5E6B /* iOS Adoption.app */,
 				5B5F55F81BCED608003C5E6B /* iOS Adoption.appex */,
 			);
 			name = Products;
@@ -125,9 +125,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5B5F55E31BCED5E6003C5E6B /* Adoption */ = {
+		5B5F55E31BCED5E6003C5E6B /* App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B5F55F11BCED5E6003C5E6B /* Build configuration list for PBXNativeTarget "Adoption" */;
+			buildConfigurationList = 5B5F55F11BCED5E6003C5E6B /* Build configuration list for PBXNativeTarget "App" */;
 			buildPhases = (
 				5B5F55E01BCED5E6003C5E6B /* Sources */,
 				5B5F55E11BCED5E6003C5E6B /* Frameworks */,
@@ -139,9 +139,9 @@
 			dependencies = (
 				5B5F560E1BCED608003C5E6B /* PBXTargetDependency */,
 			);
-			name = Adoption;
+			name = App;
 			productName = Adoption;
-			productReference = 5B5F55E41BCED5E6003C5E6B /* Adoption.app */;
+			productReference = 5B5F55E41BCED5E6003C5E6B /* iOS Adoption.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5B5F55F71BCED608003C5E6B /* Widget */ = {
@@ -191,7 +191,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5B5F55E31BCED5E6003C5E6B /* Adoption */,
+				5B5F55E31BCED5E6003C5E6B /* App */,
 				5B5F55F71BCED608003C5E6B /* Widget */,
 			);
 		};
@@ -334,7 +334,7 @@
 				INFOPLIST_FILE = Adoption/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tricertops.Adoption;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "iOS Adoption";
 			};
 			name = Debug;
 		};
@@ -347,7 +347,7 @@
 				INFOPLIST_FILE = Adoption/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tricertops.Adoption;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "iOS Adoption";
 			};
 			name = Release;
 		};
@@ -391,7 +391,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B5F55F11BCED5E6003C5E6B /* Build configuration list for PBXNativeTarget "Adoption" */ = {
+		5B5F55F11BCED5E6003C5E6B /* Build configuration list for PBXNativeTarget "App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B5F55F21BCED5E6003C5E6B /* Debug */,
