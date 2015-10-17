@@ -3,10 +3,13 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="TodayViewController" customModule="Widget" customModuleProvider="target">
             <connections>
+                <outlet property="primaryLabel" destination="NU1-Kh-iow" id="ecy-7h-Udl"/>
+                <outlet property="secondaryLabel" destination="sf5-Yp-UGo" id="JaV-2f-9vW"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -14,6 +17,53 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView simulatedAppContext="notificationCenter" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY">
             <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <subviews>
+                <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cDy-7O-TFZ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NU1-Kh-iow">
+                            <rect key="frame" x="-2" y="22" width="207" height="18"/>
+                            <animations/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="57% of devices are using iOS 9." id="QmQ-Eg-rYf">
+                                <font key="font" metaFont="menuBar"/>
+                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sf5-Yp-UGo">
+                            <rect key="frame" x="-2" y="0.0" width="271" height="14"/>
+                            <animations/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="As measured by the App Store on October 5, 2015." id="qlu-rT-zhi">
+                                <font key="font" metaFont="smallSystem"/>
+                                <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <animations/>
+                    <visibilityPriorities>
+                        <integer value="1000"/>
+                        <integer value="1000"/>
+                    </visibilityPriorities>
+                    <customSpacing>
+                        <real value="3.4028234663852886e+38"/>
+                        <real value="3.4028234663852886e+38"/>
+                    </customSpacing>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="cDy-7O-TFZ" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="0CD-hD-43v"/>
+                <constraint firstAttribute="trailing" secondItem="cDy-7O-TFZ" secondAttribute="trailing" id="DVM-zL-sRq"/>
+                <constraint firstAttribute="bottom" secondItem="cDy-7O-TFZ" secondAttribute="bottom" id="QPL-HV-Q1G"/>
+                <constraint firstItem="cDy-7O-TFZ" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="rOe-4K-cUw"/>
+            </constraints>
+            <gestureRecognizers>
+                <clickGestureRecognizer delaysPrimaryMouseButtonEvents="YES" numberOfClicksRequired="1" id="CS9-rF-wo2">
+                    <connections>
+                        <action selector="openURL:" target="-2" id="2dl-6S-CIo"/>
+                    </connections>
+                </clickGestureRecognizer>
+            </gestureRecognizers>
             <animations/>
             <point key="canvasLocation" x="162" y="166"/>
         </customView>
