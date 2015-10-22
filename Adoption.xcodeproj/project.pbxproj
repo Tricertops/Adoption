@@ -10,7 +10,7 @@
 		5B5F55E81BCED5E6003C5E6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F55E71BCED5E6003C5E6B /* AppDelegate.swift */; };
 		5B5F55EA1BCED5E6003C5E6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B5F55E91BCED5E6003C5E6B /* Assets.xcassets */; };
 		5B5F56001BCED608003C5E6B /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5F55FF1BCED608003C5E6B /* TodayViewController.swift */; };
-		5B5F560F1BCED608003C5E6B /* iOS Adoption.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5B5F55F81BCED608003C5E6B /* iOS Adoption.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5B5F560F1BCED608003C5E6B /* Adoption.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5B5F55F81BCED608003C5E6B /* Adoption.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5B5F56151BCEDF2F003C5E6B /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B5F56141BCEDF2F003C5E6B /* TodayViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		5BC8567F1BD2559400D81A43 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC8567E1BD2559400D81A43 /* MainMenu.xib */; settings = {ASSET_TAGS = (); }; };
 		5BC856831BD25C0F00D81A43 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5BC856821BD25C0F00D81A43 /* Credits.rtf */; settings = {ASSET_TAGS = (); }; };
@@ -33,7 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				5B5F560F1BCED608003C5E6B /* iOS Adoption.appex in Embed App Extensions */,
+				5B5F560F1BCED608003C5E6B /* Adoption.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,11 +41,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5B5F55E41BCED5E6003C5E6B /* iOS Adoption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Adoption.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B5F55E41BCED5E6003C5E6B /* Adoption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adoption.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5F55E71BCED5E6003C5E6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B5F55E91BCED5E6003C5E6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B5F55EE1BCED5E6003C5E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B5F55F81BCED608003C5E6B /* iOS Adoption.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iOS Adoption.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B5F55F81BCED608003C5E6B /* Adoption.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Adoption.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5F55FE1BCED608003C5E6B /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Widget.entitlements; sourceTree = "<group>"; };
 		5B5F55FF1BCED608003C5E6B /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		5B5F56091BCED608003C5E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,8 +85,8 @@
 		5B5F55E51BCED5E6003C5E6B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5B5F55E41BCED5E6003C5E6B /* iOS Adoption.app */,
-				5B5F55F81BCED608003C5E6B /* iOS Adoption.appex */,
+				5B5F55E41BCED5E6003C5E6B /* Adoption.app */,
+				5B5F55F81BCED608003C5E6B /* Adoption.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,7 +134,7 @@
 			);
 			name = App;
 			productName = Adoption;
-			productReference = 5B5F55E41BCED5E6003C5E6B /* iOS Adoption.app */;
+			productReference = 5B5F55E41BCED5E6003C5E6B /* Adoption.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5B5F55F71BCED608003C5E6B /* Widget */ = {
@@ -151,7 +151,7 @@
 			);
 			name = Widget;
 			productName = Widget;
-			productReference = 5B5F55F81BCED608003C5E6B /* iOS Adoption.appex */;
+			productReference = 5B5F55F81BCED608003C5E6B /* Adoption.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -289,7 +289,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_MODULE_NAME = "$(PROJECT_NAME:c99extidentifier)$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "iOS Adoption";
+				PRODUCT_NAME = Adoption;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -331,7 +331,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_MODULE_NAME = "$(PROJECT_NAME:c99extidentifier)$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "iOS Adoption";
+				PRODUCT_NAME = Adoption;
 				SDKROOT = macosx;
 			};
 			name = Release;

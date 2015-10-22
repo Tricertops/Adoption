@@ -1,7 +1,7 @@
-iOS Adoption Widget
+Adoption Widget
 -------------------
 
-Today Extension for OS X that shows adoption of the latest iOS version. This information is published by Apple on [App Store support page][website] and updated regularly.
+Today Extension for OS X that shows adoption of the latest version of iOS. This information is published by Apple on [App Store support page][website] and updated regularly.
 
 Compiled version of this source code is distributed on [Mac App Store][appstore]. It is not allowed to redistribute binary form of this project, [see license][license].
 

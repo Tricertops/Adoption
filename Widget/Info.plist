@@ -31,7 +31,7 @@
 		<key>NSExtensionPrincipalClass</key>
 		<string>$(PRODUCT_MODULE_NAME).TodayViewController</string>
 		<key>com.apple.notificationcenter.widget.description</key>
-		<string>Show adoption of the latest iOS version.</string>
+		<string>Show adoption of the latest version of iOS.</string>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
 	<string>© 2015 Martin Kiss.</string>

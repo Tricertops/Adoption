@@ -1,4 +1,4 @@
-iOS Adoption Widget
+Adoption Widget
 -------------------
 
 **© 2015 Martin Kiss**
